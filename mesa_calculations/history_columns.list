@@ -43,10 +43,10 @@
       star_age ! elapsed simulated time in years since the start of the run
       star_mass ! in Msun units
       !star_mdot ! d(star_mass)/dt (in msolar per year)
-      log_abs_mdot ! log10(abs(star_mdot)) (in msolar per year)
+!     log_abs_mdot ! log10(abs(star_mdot)) (in msolar per year)
       !time_step ! timestep in years since previous model
-      log_dt ! log10 time_step
-      num_zones ! number of zones in the model
+!     log_dt ! log10 time_step
+!     num_zones ! number of zones in the model
    
    ! mixing regions
    
@@ -57,14 +57,14 @@
       !  mx1_top and mx1_bot are the extent of all kinds of mixing, convective and other.
       
       ! values are m/Mstar
-      conv_mx1_top
-      conv_mx1_bot
-      conv_mx2_top
-      conv_mx2_bot
-      mx1_top
-      mx1_bot
-      mx2_top
-      mx2_bot
+!     conv_mx1_top
+!     conv_mx1_bot
+!     conv_mx2_top
+!     conv_mx2_bot
+!     mx1_top
+!     mx1_bot
+!     mx2_top
+!     mx2_bot
       
       ! radius -- values are radii in Rsun units
       !conv_mx1_top_r
@@ -106,15 +106,15 @@
       ! end1 is mass of outer edge where first zone ends (i.e. eps_nuc < burn_min1)
       ! similar for the second zone
    
-      epsnuc_M_1 ! start1 for 1st zone
-      epsnuc_M_2 ! start2
-      epsnuc_M_3 ! end2
-      epsnuc_M_4 ! end1
+!     epsnuc_M_1 ! start1 for 1st zone
+!     epsnuc_M_2 ! start2
+!     epsnuc_M_3 ! end2
+!     epsnuc_M_4 ! end1
       
-      epsnuc_M_5 ! start1 for 2nd zone
-      epsnuc_M_6 ! start2
-      epsnuc_M_7 ! end2
-      epsnuc_M_8 ! end1
+!     epsnuc_M_5 ! start1 for 2nd zone
+!     epsnuc_M_6 ! start2
+!     epsnuc_M_7 ! end2
+!     epsnuc_M_8 ! end1
 
 
       ! you might want to get a more complete list of burning regions by using the following
@@ -139,8 +139,8 @@
 
 
 
-      envelope_mass ! = star_mass - h1_boundary_mass
-      envelope_fraction_left ! = envelope_mass / (initial_mass - h1_boundary_mass)
+!     envelope_mass ! = star_mass - h1_boundary_mass
+!     envelope_fraction_left ! = envelope_mass / (initial_mass - h1_boundary_mass)
    
    ! info about locations where optical depth is 10 or 100
 
@@ -168,52 +168,52 @@
    
       !power_h_burn ! total thermal power from PP and CNO, excluding neutrinos (in Lsun units)
       !power_he_burn ! total thermal power from triple-alpha, excluding neutrinos (in Lsun units)
-      log_LH ! log10 power_h_burn
-      log_LHe ! log10 power_he_burn
+!     log_LH ! log10 power_h_burn
+!     log_LHe ! log10 power_he_burn
    
    ! conditions near surface
    
       log_L ! log10 luminosity in Lsun units
-      log_Lneu ! log10 neutrino luminosity in Lsun units
+!     log_Lneu ! log10 neutrino luminosity in Lsun units
       log_Teff ! log10 effective temperature
       log_R ! log10 radius in Rsun units
-      log_g ! log10 gravity
-      log_L_div_Ledd ! log10(L/Leddington)      
+!     log_g ! log10 gravity
+!     log_L_div_Ledd ! log10(L/Leddington)      
    
    ! conditions near center
    
-      log_center_T ! temperature
-      log_center_Rho ! density
-      log_center_P ! pressure
+!     log_center_T ! temperature
+!     log_center_Rho ! density
+!     log_center_P ! pressure
       !center_degeneracy ! the electron chemical potential in units of k*T
       !center_gamma ! plasma interaction parameter
-      center_ye
+!     center_ye
     
     
     
     ! kipp info 
-      mixing_regions 40
-      burning_regions 80
+!     mixing_regions 40
+!     burning_regions 80
 
 
 
 
    ! mass fractions near center
       
-      center h1
-      center he4
-      center c12
-      center n14
-      center o16
-      center ne20
+!     center h1
+!     center he4
+!     center c12
+!     center n14
+!     center o16
+!     center ne20
       ! etc. -- do as many of these 'center' commands as desired
       
    ! mass fractions near surface
    
       !surface h1
       !surface he4
-      surface c12
-      surface o16
+!     surface c12
+!     surface o16
       ! etc.
       
    ! mass fractions for entire star
@@ -224,8 +224,8 @@
       
    ! mass totals for entire star (in Msun units)
       
-      total_mass h1
-      total_mass he4
+!     total_mass h1
+!     total_mass he4
       ! etc.
       
    ! log10 mass totals for entire star (in Msun units)
@@ -303,10 +303,10 @@
    
    ! misc
    
-      v_div_csound_surf ! velocity divided by sound speed at outermost grid point
+!     v_div_csound_surf ! velocity divided by sound speed at outermost grid point
       !surface_accel_div_grav ! (v - v_old)/dt divided by GM/R^2 at outermost grid point
-      num_retries ! total during the run
-      num_backups ! total during the run
+!     num_retries ! total during the run
+!     num_backups ! total during the run
       
       !max_conv_vel_div_csound
       

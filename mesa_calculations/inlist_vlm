@@ -4,7 +4,8 @@
 
 &star_job
 
-      create_pre_main_sequence_model = .true.
+!     create_pre_main_sequence_model = .true.
+!     create_initial_model = .true.
 
       show_log_description_at_start = .false.
 
@@ -36,9 +37,11 @@
          max_number_retries = 150
 
 
-! TRAPPIST-1's parametes from Gillon et al. (2017)
-      initial_mass = 0.0802
-      initial_z = 0.04d0
+! TRAPPIST-1's parameters from Gillon et al. (2017)
+!     initial_mass = 0.0802
+
+!2017 Apr 4 - Per Rory's request
+      initial_mass = 0.09
       
       mixing_length_alpha = 1.89d0 ! based on solar model
       MLT_option = 'Henyey'
