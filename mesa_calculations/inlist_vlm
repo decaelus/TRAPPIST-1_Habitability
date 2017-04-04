@@ -51,7 +51,7 @@
       terminal_interval = 10
       write_header_frequency = 10
       
-      max_age = 1d12
+      max_age = 1d13
       max_years_for_timestep = 1d9
       
       varcontrol_target = 1d-2
